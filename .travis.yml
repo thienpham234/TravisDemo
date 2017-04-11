@@ -1,3 +1,6 @@
 language: swift
 osx_image: xcode8
-script: — xcodebuild clean build -workspace TravisDemo.xcworkspace -scheme TravisDemo -destination “platform=iOS Simulator,name=iPhone 6S”
+script:
+ -xcodebuild clean build 
+ -workspace TravisDemo.xcworkspace 
+ -scheme TravisDemo -destination “platform=iOS Simulator,name=iPhone 6S”
