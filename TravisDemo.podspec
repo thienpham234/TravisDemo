@@ -25,10 +25,7 @@ s.homepage = "https://github.com/thienpham234/TravisDemo"
 
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "[Your RWPickFlavor Git URL Goes Here]", :tag => "#{s.version}"}
-
-# For example,
-# s.source = { :git => "https://github.com/JRG-Developer/RWPickFlavor.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/thienpham234/TravisDemo.git", :tag => "#{s.version}"}
 
 
 # 7
