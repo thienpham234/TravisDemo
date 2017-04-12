@@ -16,5 +16,4 @@ before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
   - set -o pipefail
-  - xcodebuild -version
-  - xcodebuild -showsdks
+  - xcodebuild -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.3' build test
