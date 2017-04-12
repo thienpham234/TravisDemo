@@ -17,3 +17,5 @@ before_install:
 script:
   - set -o pipefail
   - xcodebuild -workspace TravisDemo.xcworkspace -scheme TravisDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=10.3' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
